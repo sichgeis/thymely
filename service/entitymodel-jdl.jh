@@ -1,0 +1,21 @@
+entity Customer {
+    name String
+}
+
+entity Project {
+	title String
+}
+
+entity Workperiod {
+	startTime ZonedDateTime,
+    endTime ZonedDateTime,
+	description String
+}
+
+relationship OneToMany {
+	Customer{project} to Project,
+}
+
+relationship OneToMany {
+	Project{workperiod} to Workperiod
+}
