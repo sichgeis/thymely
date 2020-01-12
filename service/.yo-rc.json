@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "eu.brokoko.thymely"
+    },
+    "jhipsterVersion": "6.6.0",
+    "applicationType": "monolith",
+    "baseName": "thymely",
+    "packageName": "eu.brokoko.thymely",
+    "packageFolder": "eu/brokoko/thymely",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZDU3MjBkYjIyMjhhMTdlMDc2ZDViYWQ0YjFlNGU2ODgyNDRjNDVkYzhjYzU0N2QwN2UxOWRkNTYwNDMyM2MwMGY4ZTUxMzFlNjhkYTZlYmM3N2VhY2IxNDMxMzQyNDU5MTc0MDBhYTMzYWZiNjk4YmIyZjEwNzliYjM2NDU2MjU=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "creationTimestamp": 1578851928757,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
