@@ -1,0 +1,12 @@
+app-workperiod-dashboard {
+  height: 100%;
+}
+
+.top-panel {
+  height: 15em;
+  border: 0.2em solid black;
+}
+
+.bottom-panel {
+  border: 0.2em solid black;
+}

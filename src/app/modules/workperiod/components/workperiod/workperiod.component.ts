@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {WorkperiodService} from '@app/core';
+import {WorkperiodTo} from '@app/shared/models';
 
 @Component({
   selector: 'app-workperiod',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./workperiod.component.css']
 })
 export class WorkperiodComponent implements OnInit {
+  private periods: Array<WorkperiodTo>;
 
-  constructor() { }
+  constructor(private workperiodService: WorkperiodService) { }
 
   ngOnInit() {
+    this.getWorkperiods();
   }
 
+  private getWorkperiods(): void {
+    this.workperiodService.getAllWorkperiods().subscribe(periods => this.periods = periods);
+  }
 }

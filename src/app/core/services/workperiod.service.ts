@@ -12,11 +12,7 @@ export class WorkperiodService {
   }
 
   getAllWorkperiods(): Observable<Array<WorkperiodTo>> {
-    return this.apiService.get('/workperiods');
-  }
-
-  getWorkperiod(id: number): Observable<WorkperiodTo> {
-    return this.apiService.get(`/workperiods/${id}`);
+    return this.apiService.get('/workperiods/samples');
   }
 
 }
