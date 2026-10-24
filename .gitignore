@@ -18,3 +18,13 @@
 # System Files
 .DS_Store
 Thumbs.db
+
+# Local secrets and private TLS material
+.env
+.env.*
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.pem
+*.key

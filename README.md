@@ -49,3 +49,11 @@ To achieve this, first build a docker image of your app by running:
 Then run:
 
     docker-compose -f src/main/docker/app.yml up -d
+
+## Historical project and configuration
+
+This repository is retired. Its Git history has been cleaned of the former JWT signing secret, bundled TLS private key, and personal commit email. Existing clones should be replaced with a fresh clone.
+
+Before running the application or integration tests, generate a fresh signing secret (`openssl rand -base64 64`) and supply it through `JHIPSTER_SECURITY_AUTHENTICATION_JWT_BASE64_SECRET`. There is no committed fallback. The JHipster generator configuration deliberately leaves `jwtSecretKey` empty; configure a new private secret when regenerating.
+
+The optional production TLS example requires your own keystore through `TLS_KEY_STORE` (for example, `file:/private/path/keystore.p12`) and `TLS_KEY_STORE_PASSWORD`. No keystore is supplied. Never reuse the old signing secret or certificate/private key. Configuration and source checks were performed for this historical cleanup; the retired application was not deployed or integration tested.
